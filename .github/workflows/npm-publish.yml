@@ -6,7 +6,7 @@ name: Node.js Package
 on:
   push:
     branches:
-      main
+      - main
 
 jobs:
   build:
@@ -32,3 +32,6 @@ jobs:
       - run: npm publish
         env:
           NODE_AUTH_TOKEN: ${{secrets.npm_token}}
+      - name: Print npm logs
+        if: failure()  # This step will run only if the publish step fails
+        run: cat /home/runner/.npm/_logs/*-debug.log
