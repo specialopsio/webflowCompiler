@@ -1,0 +1,1 @@
+-1!==window.location.href.indexOf("https://test.com")&&(console.log("123"),console.log("more test logs"),console.log("last test"),console.log("version bump"));

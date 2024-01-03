@@ -1,0 +1,8 @@
+{
+  "projectName": "test-proj",
+  "stagingUrl": "https://test.com",
+  "productionUrl": "https://test.com",
+  "debug": true,
+  "minify": true,
+  "functionnames": []
+}

@@ -1,0 +1,51 @@
+{
+  "name": "webflowcompiler",
+  "version": "1.1.1",
+  "description": "Compile script files and push to CDN",
+  "main": "setup.js",
+  "type": "module",
+  "scripts": {
+    "test": "node test.js",
+    "setup": "node setup.js",
+    "build": "gulp",
+    "build-prod": "gulp build-prod-commit",
+    "build-staging": "gulp build-staging-commit",
+    "build-prod-no-commit": "gulp build-prod",
+    "build-staging-no-commit": "gulp build-staging",
+    "scss-to-css": "gulp scssToCss",
+    "start": "gulp",
+    "deploy": "gulp build-commit-all",
+    "commit-prod": "gulp commit-prod",
+    "commit-staging": "gulp commit-staging",
+    "commit-dist": "gulp commit-dist",
+    "commit-script": "gulp commit-scripts",
+    "commit": "gulp commit-all",
+    "rand": "gulp"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BuiltByQuantum/webflowCompiler.git"
+  },
+  "author": "0 + R",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BuiltByQuantum/webflowCompiler/issues"
+  },
+  "homepage": "https://github.com/BuiltByQuantum/webflowCompiler#readme",
+  "dependencies": {
+    "browser-sync": "^2.27.7",
+    "gulp": "^4.0.2",
+    "gulp-concat": "^2.6.1",
+    "gulp-git": "^2.10.1",
+    "gulp-jsbeautifier": "^3.0.1",
+    "gulp-rename": "^2.0.0",
+    "gulp-sass": "^5.1.0",
+    "gulp-sort": "^2.0.0",
+    "gulp-uglify": "^3.0.2",
+    "gulp-uglifycss": "^1.1.0",
+    "gulp-wrap": "^0.15.0",
+    "inquirer": "^9.2.12",
+    "sass": "^1.69.6",
+    "simple-git": "^3.22.0"
+  }
+}
