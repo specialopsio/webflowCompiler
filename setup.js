@@ -103,14 +103,14 @@ async function intiializeNpm(projectDetails){
             },
             "repository": {
                 "type": "git",
-                "url": `git+https://github.com/BuiltByQuantum/${projectName}.git`
+                "url": `git+https://github.com/specialopsio/${projectDetails.projectName}.git`
               },
               "author": "0 + R",
               "license": "ISC",
               "bugs": {
-                "url": "https://github.com/BuiltByQuantum/${projectName}/issues"
+                "url": `https://github.com/specialopsio/${projectDetails.projectName}/issues`
               },
-              "homepage": "https://github.com/BuiltByQuantum/${projectName}#readme",
+              "homepage": `https://github.com/specialopsio/${projectDetails.projectName}#readme`,
               "dependencies": {
                 "browser-sync": "^2.27.7",
                 "gulp": "^4.0.2",
@@ -147,7 +147,7 @@ async function main() {
         // Create project structure
         createProjectStructure(projectName, stagingUrl, productionUrl, share_links);
         
-        await intiializeNpm()
+        await intiializeNpm({projectName: projectName, })
 
         console.log('Setup complete.');
     } catch (error) {
