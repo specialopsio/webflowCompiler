@@ -85,7 +85,7 @@ async function intiializeNpm(projectDetails){
             maine: "setup.js",
             scripts: {
                 "setup": "node setup.js",
-                "test": "echo \"Error: no test specified\" && exit 1",
+                "test": "node test.js",
                 "build": "gulp",
                 "build-prod": "gulp build-prod-commit",
                 "build-staging": "gulp build-staging-commit",
@@ -99,7 +99,8 @@ async function intiializeNpm(projectDetails){
                 "commit-dist": "gulp commit-dist",
                 "commit-script": "gulp commit-scripts",
                 "commit": "gulp commit-all",
-                "rand": "gulp"
+                "rand": "gulp",
+                "combine-embeds": "gulp combine-embeds"
             },
             "repository": {
                 "type": "git",
