@@ -82,7 +82,8 @@ async function intiializeNpm(projectDetails){
             name: projectDetails.projectName,
             version: "1.0.0",
             description: "",
-            maine: "setup.js",
+            main: "setup.js",
+            type: "module",
             scripts: {
                 "setup": "node setup.js",
                 "test": "node test.js",
